@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,62 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Remedium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoH-UX-CND">
+                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ZdW-hB-6KI">
+                                        <rect key="frame" x="110.66666666666669" y="0.0" width="154" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="4d7-AR-vaR"/>
+                                            <constraint firstAttribute="width" constant="154" id="dhd-ps-Iyb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdn-EC-1Ef">
+                                        <rect key="frame" x="328" y="17" width="31" height="30"/>
+                                        <state key="normal" title="عربي"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZdW-hB-6KI" firstAttribute="centerX" secondItem="aoH-UX-CND" secondAttribute="centerX" id="7HL-Yw-wMB"/>
+                                    <constraint firstAttribute="height" constant="64" id="Iki-hx-t6U"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZdW-hB-6KI" secondAttribute="bottom" id="LBX-9G-toY"/>
+                                    <constraint firstItem="tdn-EC-1Ef" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZdW-hB-6KI" secondAttribute="trailing" constant="8" symbolic="YES" id="Xcl-xO-zUv"/>
+                                    <constraint firstItem="ZdW-hB-6KI" firstAttribute="top" secondItem="aoH-UX-CND" secondAttribute="top" id="kZr-RA-kQQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tdn-EC-1Ef" secondAttribute="trailing" constant="16" id="s7j-df-kjq"/>
+                                    <constraint firstItem="ZdW-hB-6KI" firstAttribute="centerY" secondItem="aoH-UX-CND" secondAttribute="centerY" id="uDl-2Q-o8S"/>
+                                    <constraint firstItem="tdn-EC-1Ef" firstAttribute="centerY" secondItem="aoH-UX-CND" secondAttribute="centerY" id="zUH-iD-0He"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="developed by ahmed elbasha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOo-rx-jQK">
+                                <rect key="frame" x="117" y="766" width="141" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZOo-rx-jQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OmG-nl-bwT"/>
+                            <constraint firstItem="aoH-UX-CND" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QrQ-pt-Xet"/>
+                            <constraint firstItem="aoH-UX-CND" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ksk-Jk-aec"/>
+                            <constraint firstItem="ZOo-rx-jQK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uaO-Ri-ljh"/>
+                            <constraint firstItem="aoH-UX-CND" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ztx-GB-5fu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="132.26600985221674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="companyLogo" width="512" height="512"/>
+    </resources>
 </document>
